@@ -25,7 +25,7 @@ def add_message(author, text):  # объявляем функцию добавл
     message = {
         "author": author,
         "text": text,
-        "time": datetime.now().strftime("%H:%M:%S")
+        "time": datetime.now().strftime("%H:%M")
     }
     all_messages.append(message)  # добавляем параметризированное сообщение в список всех сообщений
     save_message()
